@@ -46,7 +46,7 @@ export default class ProductGrid {
       if (filter == 'maxSpiciness') {
         filteredProducts = filteredProducts.filter(product => product.spiciness <= this.filters[filter]);
       }
-      if (filter == 'category' && this.filters[filter].length) {
+      if (filter == 'category' && this.filters[filter]) {
         filteredProducts = filteredProducts.filter(product => product.category == this.filters[filter]);
       }
     }
